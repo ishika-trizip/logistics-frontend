@@ -8,5 +8,11 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     react()],
-    base:'/',
+  base: '/',
+  build: {
+    outDir: "dist"
+  },
+  server: {
+    historyApiFallback: true // for local dev (optional)
+  }
 })
